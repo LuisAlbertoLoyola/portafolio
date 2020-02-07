@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Luis Alberto Loyola | UI Designer & Front-End Developer</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="png" href="assets/img/logo-3.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Luis Alberto Loyola">
+  <meta name="keywords" content="front-end, designer, developer, web design, UI">
+<!-- Bootstrap 4.1.3 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--Google Font: Archivo(Bold), Lato (Light)-->
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato:300&display=swap" rel="stylesheet">
+<!--Font Awesome 5.6.3-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
+<!--Smooth Scroll-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+</script>
+</head>
+
+<body>
+<!--Navbar agregado-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo-2.png" alt="Logo Sitio Web"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" ariacontrols="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#work">Work</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    </nav>
+
+<!--Header (Hero Section)-->
+  <header class="hero">
+    <div class="container">
+      <h1>LUIS ALBERTO <br> LOYOLA</h1>
+      <hr>
+      <h2>UI Designer & Front-End Developer</h2>
+    </div>
+  </header>
+
+<!--About-->
+<section id="about" class="container text-center">
+  <h3>ABOUT</h3>
+  <p class="bio text-align-center my-4 mx-3">UI Designer & Front-End Developer based in Santiago, Chile. A motivated, adaptable and responsible professional looking for new projects. A creative and adventurous mind, always up for new challenges.</p>
+  <hr class="bio-divider">
+  <div class="row">
+      <div class="col-md-6">
+      <p class="my-3 mx-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eos perspiciatis
+      qui consequuntur sint ducimus itaque inventore dolorem error dignissimos, illo magnam temporibus
+      laborum voluptatem deserunt perferendis ducimus itaque inventore dolorem error dignissimos,
+      illo magnam temporibus laborum voluptatem deserunt perferendconsecteturaque inventore dolorem
+      error dignissimos, illo magnam temporibu laborum voluptatem deserunt perferendis consectetu aut at.</p>
+      </div>
+    <div class="col-md-6">
+      <p class="my-3 mx-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, eos perspiciatis
+      qui consequuntur sint ducimus itaque inventore dolorem error dignissimos, illo magnam temporibus
+      laborum voluptatem deserunt perferendis ducimus itaque inventore dolorem error dignissimos,
+      illo magnam temporibus laborum voluptatem deserunt perferendconsecteturaque inventore dolorem
+      error dignissimos, illo magnam temporibu laborum voluptatem deserunt perferendis consectetu aut at.</p>
+    </div>
+  </div>
+  </section>
+
+<!--Carousel-->
+<section class="container carousel p-5">
+  <h3 class="mb-3">CLIENTS</h3>
+    <div class="col-12 pt-4 pb-5">
+         <!--Esto genera un carrusel-->
+         <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <!--Esto genera un carrusel-->
+             <ol class="carousel-indicators">
+               <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#blogCarousel" data-slide-to="1"></li>
+              <!--Indica que son dos botones-->
+             </ol>
+           <div class="carousel-inner">
+          <!--Primeros 4 iconos-->
+          <div class="carousel-item active text-center">
+            <div class="row">
+             <div class="col-3">
+                <img src="assets/img/ripley.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ripley">
+             </div>
+             <div class="col-3">
+                <img src="assets/img/fox.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="fox">
+             </div>
+             <div class="col-3">
+                <img src="assets/img/foxsports.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="foxsports">
+             </div>
+             <div class="col-3">
+                <img src="assets/img/cyt.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="cyt">
+              </div>
+             </div>
+          </div>
+         <!--Segundos 4 iconos-->
+         <div class="carousel-item text-center">
+            <div class="row">
+               <div class="col-3">
+                   <img src="assets/img/kidzania.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="kidzania">
+               </div>
+               <div class="col-3">
+                 <img src="assets/img/starbucks.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="starbucks">
+               </div>
+               <div class="col-3">
+                 <img src="assets/img/smartfit.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="smartfit">
+               </div>
+               <div class="col-3">
+                 <img src="assets/img/vinamaipo.jpg" height="150px" width="150px" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="vinamaipo">
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Mis Trabajos Section-->
+<section id="work" class="container-fluid py-5 my-5">
+<div class="mt-3">
+  <h3 class="text-center text-white">WORK</h2>
+</div>
+<!--Cards-->
+  <div class="card-deck my-5 mx-5">
+<!--Card1-->
+    <div class="card">
+      <img class="card-img-top" src="assets/img/card-1.jpg" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title">Meet & Coffee</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="btn btn-outline-info" data-toggle="modal" data-target="#meetcoffee">See More</a>
+      </div>
+    </div>
+<!--ModalCard1-->
+    <div class="modal fade" id="meetcoffee" tabindex="-1" role="dialog" arialabelledby="meetcoffee4" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="meetcoffee">Meet & Coffee</h5>
+            <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body">
+          <img src="assets/img/card-1.jpg" alt="Meet & Coffee"
+          class="img-fluid my-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Card2-->
+    <div class="card">
+      <img class="card-img-top" src="assets/img/card-2.jpg" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title">Iguana Page</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a class="btn btn-outline-info" data-toggle="modal" data-target="#iguana">See More</a>
+      </div>
+    </div>
+  <!--ModalCard2-->
+    <div class="modal fade" id="iguana" tabindex="-1" role="dialog" arialabelledby="iguana" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="iguana">Iguana Page</h5>
+              <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div class="modal-body">
+            <img src="assets/img/card-2.jpg" alt="iguana"
+            class="img-fluid my-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Card3-->
+<div class="card">
+  <img class="card-img-top" src="assets/img/card-3.jpg" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">Suricata</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="btn btn-outline-info" data-toggle="modal" data-target="#suricata">See More</a>
+  </div>
+</div>
+<!--ModalCard3-->
+    <div class="modal fade" id="suricata" tabindex="-1" role="dialog" arialabelledby="suricata" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="suricata">Suricata</h5>
+              <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <div class="modal-body">
+            <img src="assets/img/card-3.jpg" alt="Suricata"
+            class="img-fluid my-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="card-deck my-5 mx-5">
+<!--Card4-->
+  <div class="card">
+    <img class="card-img-top" src="assets/img/card-4.jpg" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">Cuppon</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="btn btn-outline-info" data-toggle="modal" data-target="#cuppon">See More</a>
+    </div>
+  </div>
+<!--ModalCard4-->
+  <div class="modal fade" id="cuppon" tabindex="-1" role="dialog" arialabelledby="cuppon" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuppon">Cuppon</h5>
+          <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body">
+        <img src="assets/img/card-4.jpg" alt="Cuppon"
+        class="img-fluid my-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Card5-->
+  <div class="card">
+    <img class="card-img-top" src="assets/img/card-5.jpg" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">Ricomida</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a class="btn btn-outline-info" data-toggle="modal" data-target="#ricomida">See More</a>
+    </div>
+  </div>
+<!--ModalCard5-->
+  <div class="modal fade" id="ricomida" tabindex="-1" role="dialog" arialabelledby="ricomida" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ricomida">Ricomida</h5>
+            <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body">
+          <img src="assets/img/card-5.jpg" alt="ricomida"
+          class="img-fluid my-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Card6-->
+<div class="card">
+<img class="card-img-top" src="assets/img/card-6.jpg" alt="Card image cap">
+  <div class="card-body">
+  <h5 class="card-title">Olivia Ros Page</h5>
+  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua.</p>
+  <a class="btn btn-outline-info" data-toggle="modal" data-target="#olivia">See More</a>
+</div>
+</div>
+<!--ModalCard6-->
+  <div class="modal fade" id="olivia" tabindex="-1" role="dialog" arialabelledby="olivia" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="olivia">Olivia Ros Page</h5>
+            <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body">
+          <img src="assets/img/card-6.jpg" alt="olivia"
+          class="img-fluid my-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!--Form-->
+<div class="mt-3">
+  <h3 class="text-center" id="contact">CONTACT</h2>
+</div>
+<div class="typeform-widget" data-url="https://luisalbertoloyola.typeform.com/to/VEJx9g" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=VEJx9g&utm_source=typeform.com-01DZCB8WX4VF1BXC7FHNW1NSA8-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
+
+<!--Footer-->
+<footer class="footer text-center pt-4">
+  <h4>Luis Alberto Loyola</h4>
+  <div class="d-flex flex-row justify-content-center pb-3">
+  <!--icono-1-->
+    <div class="p-2">
+      <a href="https://github.com/LuisAlbertoLoyola" target="_blank"><i class="fab fa-github fa-3x text-white"></i></a>
+    </div>
+  <!--icono-2-->
+    <div class="p-2">
+      <a href="https://www.linkedin.com/in/luisalbertoloyola/" target="_blank"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+    </div>
+  <!--icono-3-->
+    <div class="p-2">
+      <a href="https://twitter.com/holaloyola" target="_blank"><i class="fab fa-twitter fa-3x text-white"></i></a>
+    </div>
+  <!--icono-3-->
+    <div class="p-2">
+      <a href="https://www.facebook.com/luisalbertoloyola" target="_blank"><i class="fab fa-facebook fa-3x text-white"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!--jQuery 3.3.1 (sin slim)-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+</script>
+<!--Popper JS 1.14.3-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--Bootstrap JS 4.1.3-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- Mi script -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
